@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>fireMessage</title>
+
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+    <!--PASTE SNIPPET HERE-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCqLQtwzamgZlUA9adTXFsA13jonL5XF_0",
+            authDomain: "firemessage2-e4957.firebaseapp.com",
+            databaseURL: "https://firemessage2-e4957.firebaseio.com",
+            projectId: "firemessage2-e4957",
+            storageBucket: "firemessage2-e4957.appspot.com",
+            messagingSenderId: "820564902477",
+            appId: "1:820564902477:web:12d6d1e7594a01c3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+    </script>
+
+
+  
+  
+    <!--custom files-->
+    <script src="lib/js/main.js" defer></script>
+    <link rel="stylesheet" href="lib/css/style.css">
+</head>
+
+<body>
+
+    <!--Add your name-->
+    <h1>Bob's Messaging App</h1>
+
+    <!--This div will be populated with messages-->
+    <div class="allMessages">
+
+    </div>
+
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Your name is:</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="message">Message is test:</label>
+                    <input id="message" type="text">
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
